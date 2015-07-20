@@ -1,0 +1,24 @@
+@import "../source/fonts.css";
+
+$col-yellow: #FFCC00;
+$col-gray: #667;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 8px;
+}
+
+h2 {
+  font-family: 'source_sans_prolight';
+  font-size: 3em;
+  color: $col-gray;
+}
+
+hr {
+  height: 2px;
+  background-color: $col-yellow;
+  border: 0 none;
+}

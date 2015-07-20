@@ -1,0 +1,18 @@
+@import url(../source/fonts.css);
+* {
+  box-sizing: border-box; }
+
+body {
+  padding: 8px; }
+
+h2 {
+  font-family: 'source_sans_prolight';
+  font-size: 3em;
+  color: #667; }
+
+hr {
+  height: 2px;
+  background-color: #FFCC00;
+  border: 0 none; }
+
+/*# sourceMappingURL=styles.css.map */
