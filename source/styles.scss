@@ -8,17 +8,157 @@ $col-gray: #667;
 }
 
 body {
-  padding: 8px;
+  margin: 0;
+  max-width: 500px;
+
+  > * {
+    padding: 0 20px;
+    margin: 0;
+  }
 }
 
-h2 {
-  font-family: 'source_sans_prolight';
-  font-size: 3em;
+h1, h2, h3, p, ul li {
   color: $col-gray;
 }
 
+h1, h3 {
+  font-family: 'majesti_bannerheavy';
+}
+
+h1 {
+  font-size: 38px;
+  line-height: 40px;
+  margin-top: 12px;
+}
+
+h2, button, a {
+  font-family: 'source_sans_prolight';
+  font-size: 19px;
+  line-height: 22px;
+  color: $col-gray;
+}
+
+h2 {
+  margin-bottom: 12px;
+}
+
+h3 {
+  font-size: 26px;
+  line-height: 28px;
+}
+
+p, ul li {
+  font-family: 'source_sans_proregular';
+  font-size:§ 16px;
+  line-height: 20px;
+}
+
+p {
+  margin-bottom: 12px;
+
+  &.intro {
+    font-family: 'source_sans_prolight';
+    font-size: 20px;
+    line-height: 26px;
+    margin-top: 12px;
+  }
+}
+
+ul li {
+  margin-left: 16px;
+}
+
 hr {
-  height: 2px;
+  height: 1px;
   background-color: $col-yellow;
   border: 0 none;
+  padding: 0;
+  margin: 18px auto;
+  width: calc(100% - 40px);
+  text-align: center;
+}
+
+div {
+  width: 100%;
+  height: 320px;
+  background-image: url('../source/me.png');
+  background-size: cover;
+  border-top: 2px solid $col-yellow;
+  position: relative;
+
+  ul {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    padding: 0;
+    margin: 0;
+
+    li {
+      list-style: none;
+      float: left;
+      margin: 0;
+
+      &:not(:last-child) {
+        margin-right: 12px;
+      }
+
+      a {
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        background: $col-yellow;
+        margin: 0;
+
+        &.twitter {
+          background: url('../source/icon-twitter.svg') no-repeat $col-yellow center;
+        }
+
+        &.medium {
+          background: url('../source/icon-medium.svg') no-repeat $col-yellow center;
+        }
+
+        &.linkedin {
+          background: url('../source/icon-linkedin.svg') no-repeat $col-yellow center;
+        }
+
+        &.twitter, &.medium, &.linkedin {
+          &:hover {
+            background-color: $col-gray;
+            cursor: pointer;
+            -webkit-transition: all .2s; /* Safari */
+            transition: all .2s;
+          }
+        }
+      }
+    }
+  }
+}
+
+a {
+  width: calc(100% - 40px);
+  display: block;
+  padding: 8px;
+  background-color: $col-yellow;
+  border: 0;
+  margin: 24px auto;
+  border-radius: 2px;
+  box-shadow: 0 2px darken($col-yellow, 10);
+  text-align: center;
+  text-decoration: none;
+
+  &:hover {
+    background-color: $col-gray;
+    color: white;
+    box-shadow: 0 2px darken($col-gray, 10);
+    cursor: pointer;
+
+    -webkit-transition: all .2s; /* Safari */
+    transition: all .2s;
+  }
+
+  &:active {
+    position: relative;
+    top: 2px;
+    box-shadow: none;
+  }
 }
