@@ -15,7 +15,7 @@
   font-family: 'majesti_bannerheavy';
   src: url("../source/type/majesti-banner-heavy-webfont.eot");
   src: url("../source/type/majesti-banner-heavy-webfont.eot?#iefix") format("embedded-opentype"), url("../source/type/majesti-banner-heavy-webfont.woff2") format("woff2"), url("../source/type/majesti-banner-heavy-webfont.woff") format("woff"), url("../source/type/majesti-banner-heavy-webfont.ttf") format("truetype");
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal; }
 * {
   box-sizing: border-box; }
@@ -31,7 +31,8 @@ h1, h2, h3, p, ul li {
   color: #667; }
 
 h1, h3 {
-  font-family: 'majesti_bannerheavy'; }
+  font-family: 'majesti_bannerheavy';
+  font-weight: bold; }
 
 h1 {
   font-size: 38px;
@@ -60,16 +61,16 @@ p {
   margin-bottom: 12px; }
   p.intro {
     font-family: 'source_sans_prolight';
-    font-size: 20px;
-    line-height: 26px;
-    margin-top: 12px; }
+    font-size: 24px;
+    line-height: 28px;
+    margin-top: 24px; }
 
 ul li {
   margin-left: 16px; }
 
 hr {
   height: 1px;
-  background-color: #FFCC00;
+  background-color: #3498db;
   border: 0 none;
   padding: 0;
   margin: 18px auto;
@@ -81,7 +82,7 @@ div {
   height: 320px;
   background-image: url("../source/img/me.png");
   background-size: cover;
-  border-top: 2px solid #FFCC00;
+  border-top: 2px solid #3498db;
   position: relative; }
   div ul {
     position: absolute;
@@ -89,6 +90,8 @@ div {
     bottom: 20px;
     padding: 0;
     margin: 0; }
+    div ul:last-of-type {
+      margin-bottom: 20px; }
     div ul li {
       list-style: none;
       float: left;
@@ -99,14 +102,14 @@ div {
         width: 50px;
         height: 50px;
         border-radius: 100%;
-        background: #FFCC00;
+        background: #3498db;
         margin: 0; }
         div ul li a.twitter {
-          background: url("../source/img/icon-twitter.svg") no-repeat #FFCC00 center; }
+          background: url("../source/img/icon-twitter.svg") no-repeat #3498db center; }
         div ul li a.medium {
-          background: url("../source/img/icon-medium.svg") no-repeat #FFCC00 center; }
+          background: url("../source/img/icon-medium.svg") no-repeat #3498db center; }
         div ul li a.linkedin {
-          background: url("../source/img/icon-linkedin.svg") no-repeat #FFCC00 center; }
+          background: url("../source/img/icon-linkedin.svg") no-repeat #3498db center; }
         div ul li a.twitter:hover, div ul li a.medium:hover, div ul li a.linkedin:hover {
           background-color: #667;
           cursor: pointer;
@@ -118,16 +121,16 @@ a {
   width: calc(100% - 40px);
   display: block;
   padding: 8px;
-  background-color: #FFCC00;
+  background-color: #3498db;
   border: 0;
   margin: 24px auto;
   border-radius: 2px;
-  box-shadow: 0 2px #cca300;
+  box-shadow: 0 2px #217dbb;
   text-align: center;
-  text-decoration: none; }
+  text-decoration: none;
+  color: white; }
   a:hover {
     background-color: #667;
-    color: white;
     box-shadow: 0 2px #4e4e5c;
     cursor: pointer;
     -webkit-transition: all .2s;
